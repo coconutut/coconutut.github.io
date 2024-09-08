@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>Shadowsocks-based Personal VPN Setup</title>
+    <link href="/2024/09/08/%E5%9F%BA%E4%BA%8EShadowsocks%E7%9A%84%E4%B8%AA%E4%BA%BAVPN%E6%90%AD%E5%BB%BA/"/>
+    <url>/2024/09/08/%E5%9F%BA%E4%BA%8EShadowsocks%E7%9A%84%E4%B8%AA%E4%BA%BAVPN%E6%90%AD%E5%BB%BA/</url>
+    
+    <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>找了很多的教程，大多年久失修。在大浪淘沙里，找到了一个很好的方法，特此记录。</p><h4 id="云服务器购买"><a href="#云服务器购买" class="headerlink" title="云服务器购买"></a>云服务器购买</h4><ol><li>我选择的是vultr云服务器，因为vultr有新用户的优惠，首充送100刀。<a href="https://www.vultr.com/">vultr官网链接</a></li><li>绑定支付方式，选择Alipay支付方式，支付10刀，获得110刀。</li><li>服务器推荐选择日本，延迟较低，操作系统我选的是CentOS 7，进行服务器部署。</li><li>部署好服务器，下载[PuTTY](<a href="https://putty.org/">Download PuTTY - a free SSH and telnet client for Windows</a>)。</li></ol><h4 id="服务端配置"><a href="#服务端配置" class="headerlink" title="服务端配置"></a>服务端配置</h4><ol start="5"><li>连接上服务器后，安装shadowsocks.</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">wget --no-check-certificate -O shadowsocks-all.sh<br>https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh<br><span class="hljs-built_in">chmod</span> +x shadowsocks-all.sh<br>./shadowsocks-all.sh 2&gt;&amp;1 | <span class="hljs-built_in">tee</span> shadowsocks-all.log<br></code></pre></td></tr></table></figure><ol start="6"><li>配置ss,主要是端口，密码，加密方式，这个可以随便选，后面在客户端对应上来就行。</li><li>重要的一步，关闭服务器系统的防火墙。</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">systemctl stop firewalld<br>systemctl <span class="hljs-built_in">disable</span> firewalld<br></code></pre></td></tr></table></figure><h4 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h4><ol start="8"><li>下载shadowsocks客户端。</li></ol><ul><li><p>Windows：<a href="https://github.com/shadowsocks/shadowsocks-windows/releases">https://github.com/shadowsocks/shadowsocks-windows/releases</a></p></li><li><p>Android:<a href="https://github.com/shadowsocks/shadowsocks-android/releases">https://github.com/shadowsocks/shadowsocks-android/releases</a></p></li><li><p>MAC:<a href="https://github.com/shadowsocks/ShadowsocksX-NG/releases">https://github.com/shadowsocks/ShadowsocksX-NG/releases</a></p></li><li><p>Linux:<a href="https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation">https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation</a></p></li></ul><ol start="9"><li>配置服务器。</li></ol><ul><li>服务器地址（你的服务器IPv4地址）。</li><li>端口号，与前面对应上即可。</li><li>密码，对应前面。</li><li>加密方式，对应服务端的配置加密方式即可。</li></ul><ol start="10"><li>开启系统代理。</li></ol><ul><li>右键纸飞机图标-&gt;系统代理-&gt;PAC模式</li><li>这里简要说一下PAC模式和全局模式问题：PAC模式就是访问国内网站会走国内IP，访问被封的网站走服务器IP。全局就是全部走服务器IP，这里建议选择PAC模式，PAC的地址都是保存在<a href="https://github.com/gfwlist/gfwlist">gfwlist</a>，希望大家遇到PAC无法访问的网站多上去提issues。</li></ul><h4 id="神圣时刻"><a href="#神圣时刻" class="headerlink" title="神圣时刻"></a>神圣时刻</h4><ol start="11"><li>最后，打开<a href="https://www.google.com/">google</a>试试吧！</li></ol><p>（注：教程后续补图，如有问题私信我邮箱）</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>puzzle</title>
     <link href="/2024/09/06/puzzle/"/>
     <url>/2024/09/06/puzzle/</url>
