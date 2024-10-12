@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>node环境变量问题</title>
+    <link href="/2024/10/12/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BA%E5%9D%9B/"/>
+    <url>/2024/10/12/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BA%E5%9D%9B/</url>
+    
+    <content type="html"><![CDATA[<p><strong>错误描述</strong> ：”node” 不是内部或外部命令，也不是可运行的程序或批处理文件。</p><p><strong>问题分析</strong>：通常意味着Node.js没有正确安装或者它的执行路径没有被添加到系统的环境变量中。<br>以下是一些可能的解决方案：</p><h4 id="1-检查Node-js是否安装"><a href="#1-检查Node-js是否安装" class="headerlink" title="1. 检查Node.js是否安装"></a>1. 检查Node.js是否安装</h4><p>首先，确保你的计算机上已经安装了Node.js。你可以通过在命令行中输入以下命令来检查：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">node -v<br></code></pre></td></tr></table></figure><p>如果Node.js已经安装，这个命令将返回Node.js的版本号。如果没有返回版本号，那么你需要安装Node.js。</p><h4 id="2-安装Node-js"><a href="#2-安装Node-js" class="headerlink" title="2. 安装Node.js"></a>2. 安装Node.js</h4><p>如果你没有安装Node.js，可以从<a href="https://nodejs.org/">Node.js官网</a>下载并安装它。安装时，确保选择“Add to PATH”选项，这样安装程序会自动将Node.js的路径添加到环境变量中。</p><h4 id="3-添加Node-js到环境变量"><a href="#3-添加Node-js到环境变量" class="headerlink" title="3. 添加Node.js到环境变量"></a>3. 添加Node.js到环境变量</h4><p>如果你已经安装了Node.js，但是没有将其添加到环境变量中，你可以手动添加：</p><ul><li>找到Node.js的安装路径，通常是<code>C:\Program Files\nodejs\</code>或者<code>C:\Program Files (x86)\nodejs\</code>。</li><li>右键点击“我的电脑”或“此电脑”，选择“属性”。</li><li>点击“高级系统设置”。</li><li>在系统属性窗口中点击“环境变量”。</li><li>在“系统变量”区域找到并选中“Path”变量，然后点击“编辑”。</li><li>在编辑环境变量窗口中点击“新建”，然后粘贴Node.js的安装路径。</li><li>点击“确定”保存并关闭所有窗口。</li></ul><h4 id="4-重启命令行或计算机"><a href="#4-重启命令行或计算机" class="headerlink" title="4. 重启命令行或计算机"></a>4. 重启命令行或计算机</h4><p>在完成上述步骤后，重启命令行或者重启计算机以确保环境变量更改生效。</p><h4 id="5-重新运行Hexo命令"><a href="#5-重新运行Hexo命令" class="headerlink" title="5. 重新运行Hexo命令"></a>5. 重新运行Hexo命令</h4><p>在确保Node.js安装并配置正确后，再次尝试运行Hexo相关的命令，例如：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate<br>hexo server<br></code></pre></td></tr></table></figure><p>如果仍然遇到问题，可以尝试以下步骤：</p><ul><li>确保你的命令行是在管理员模式下运行的。</li><li>尝试使用Git Bash或其他终端运行Hexo命令。</li><li>检查Hexo是否正确安装，可以使用<code>hexo -v</code>来检查。</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Shadowsocks-based Personal VPN Setup</title>
     <link href="/2024/09/08/%E5%9F%BA%E4%BA%8EShadowsocks%E7%9A%84%E4%B8%AA%E4%BA%BAVPN%E6%90%AD%E5%BB%BA/"/>
     <url>/2024/09/08/%E5%9F%BA%E4%BA%8EShadowsocks%E7%9A%84%E4%B8%AA%E4%BA%BAVPN%E6%90%AD%E5%BB%BA/</url>
