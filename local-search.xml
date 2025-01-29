@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>neo4j community最新版本安装教程（2025.1）</title>
+    <link href="/2025/01/29/neo4j%20community%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%882025.1%EF%BC%89/"/>
+    <url>/2025/01/29/neo4j%20community%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%EF%BC%882025.1%EF%BC%89/</url>
+    
+    <content type="html"><![CDATA[<h3 id="neo4j-community最新版本安装教程（2025-1）"><a href="#neo4j-community最新版本安装教程（2025-1）" class="headerlink" title="neo4j community最新版本安装教程（2025.1）"></a>neo4j community最新版本安装教程（2025.1）</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>​neo4j desktop以交互性好，体验好为优点。但是自24年中旬neo4j官网先后被墙和neo4j desktop联网打不开等诸多问题，本文作者建议使用community版本。</p><h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><ol><li><p>下载安装包</p><ol><li><a href="https://neo4j.com/deployment-center/%22neo4j%E5%AE%98%E7%BD%91%22">neo4j官网</a>（需要科学上网），下载community最新版本(5.26.1)<img src="https://www.helloimg.com/i/2025/01/29/6799da7e2dc4d.png" alt="image"></li><li>jdk-23下载(这里选择windows的第一个类型的安装包)<img src="https://www.helloimg.com/i/2025/01/29/6799dc393933b.png" alt="jdk下载页面.png"></li></ol></li><li><p>配置环境变量（本文以最简便的方法配置环境变量）</p><ol><li><p>配置jdk环境变量</p><p>1.找到下载的压缩包，选择适合的位置解压，找到bin文件夹，选择如下图的路径复制下来。 <img src="https://www.helloimg.com/i/2025/01/29/6799ddf103f76.png" alt="jdk环境变量.png"></p><p>2.进入设置-&gt;系统-&gt;系统信息，选择高级系统设置。<img src="https://www.helloimg.com/i/2025/01/29/6799e1597ec43.png" alt="高级系统设置.png"></p><p>3.选择环境变量<img src="https://www.helloimg.com/i/2025/01/29/6799e158602cb.png" alt="系统属性.png"></p><p>4.选择path系统环境变量<img src="https://www.helloimg.com/i/2025/01/29/6799e158b89ec.png" alt="Path变量.png"></p><p>5.新建环境变量，然后将bin路径复制给新变量。<img src="https://www.helloimg.com/i/2025/01/29/6799e15806cd1.png" alt="jdk环境.png"></p></li><li><p>配置neo4j环境变量</p><p>1.找到下载的压缩包，选择适合的位置解压，找到bin文件夹，选择如下图的路径复制下来。<img src="https://www.helloimg.com/i/2025/01/29/6799dd51ccdd5.png" alt="neo4j环境变量.png">2.同上，将路径复制到path环境变量。<img src="https://www.helloimg.com/i/2025/01/29/6799e2b89d89f.png" alt="neo4j环境.png"></p></li></ol></li><li><p>验证环境变量是否生效。在配置完环境变量，新开一个cmd终端。输入以下命令，预期输出如下图即为生效。<img src="https://www.helloimg.com/i/2025/01/29/6799e37c8cf5a.png" alt="验证环境变量.png"></p></li><li><p>输入neo4j console命令启动neo4j图数据库，进入红线框所画的本地网址。<img src="https://www.helloimg.com/i/2025/01/29/6799e61073035.png" alt="neo4j启动.png"></p></li><li><p>初始化用户名和密码都为neo4j,首次登录需要修改密码。（密码不少于八位）<img src="https://www.helloimg.com/i/2025/01/29/6799e618569f1.png" alt="初始化.png"></p><p><img src="https://www.helloimg.com/i/2025/01/29/6799e62032198.png" alt="修改密码.png"></p></li><li><p>成功安装！<img src="https://www.helloimg.com/i/2025/01/29/6799e62873a24.png" alt="成功.png"></p></li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>不要伫立在我的墓前哭泣</title>
     <link href="/2024/10/26/%E8%87%B4%E6%95%AC%E6%AD%BB%E4%BA%A1/"/>
     <url>/2024/10/26/%E8%87%B4%E6%95%AC%E6%AD%BB%E4%BA%A1/</url>
