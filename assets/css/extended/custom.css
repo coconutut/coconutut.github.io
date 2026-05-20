@@ -1,0 +1,19 @@
+/*
+This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+
+Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+*/
+/* 全局应用字体：使用霞鹜文楷 (LXGW WenKai Screen) */
+body {
+    font-family: 'LXGW WenKai Screen', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 覆盖代码区字体：使用业界最美观的等宽编程字体组合，并略微调大 */
+code,
+pre,
+.post-content pre,
+.post-content code {
+    font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', monospace !important;
+    font-size: 15px !important; 
+    line-height: 1.6 !important; /* 增加行高，让代码看起来更通透舒适 */
+}
