@@ -3,7 +3,7 @@ date: '2026-05-20T19:07:15+08:00'
 draft: false
 title: 'LRU缓存'
 tags: ["LRU", "C++"]
-categories: ["手撕"]
+categories: ["Hot100"]
 ---
 
 1. 重点记忆private变量有
